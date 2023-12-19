@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos]);
+  });
 
   const addTodo = () => {
     if (!newTodo.trim()) return;
